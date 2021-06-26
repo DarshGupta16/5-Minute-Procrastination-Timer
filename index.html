@@ -9,11 +9,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     />
-    <title>My Awesome Project!</title>
+    <title>5 Minute Procrastination Timer</title>
   </head>
   <body>
     <div id="app">
       <h1>{{ title }}</h1>
+      <h2><a href="whatisthis.html">What is this?</a></h2>
+      <h1 class="timerDisplay">{{ timerDisplay }}</h1>
+      <button class="btn btn-primary" @click="btnClicked()">
+        {{ btnValue }}
+      </button>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
